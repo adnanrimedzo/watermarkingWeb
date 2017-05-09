@@ -1,0 +1,54 @@
+<!-- index.html-->
+
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<div class="jumbotron">
+  <h2>{{ name }}</h2>
+</div>
+<div>
+
+
+  {% if uploaded %}
+        <div class="form-group">
+        <label>Decrypt Image</label>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                    Browse… <input type="file" id="imgInp" name="file">
+                </span>
+            </span>
+            <input type="text" class="form-control" readonly>
+        </div>
+
+        <img id='img-upload' />
+                <form action = "decrypt" method = "POST"
+         enctype = "multipart/form-data" id="imageToUpload">
+        <div class="input-group">
+
+        <span class="input-group-btn">
+
+
+            <button class="btn btn-primary btn-block" type="submit">Decrypt</button>
+            </form>
+        </span>
+    </div>
+    </div>
+  {% else %}
+            <div class="form-group">
+        <label>Uploaded Image</label>
+ 
+
+        <img id='img-upload' />
+
+    </div>
+  {% endif %}
+
+
+
+
+
+
+
+</div>
+{% endblock %}
