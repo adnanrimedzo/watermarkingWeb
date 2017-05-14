@@ -17,7 +17,6 @@ nose
 sphinx
 numpy
 Pywavelets
-opencv-python
 zbar-py
 qrcode
 qrtools
