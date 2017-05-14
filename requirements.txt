@@ -13,4 +13,13 @@ pyparsing==2.2.0
 pytz==2017.2
 six==1.10.0
 Werkzeug==0.12.1
+nose
+sphinx
+numpy
+Pywavelets
+opencv-python
+zbar-py
+qrcode
+qrtools
+matplotlib
 git+https://github.com/adnanrimedzo/sonyWaterMarking.git
